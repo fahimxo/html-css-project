@@ -1,0 +1,236 @@
+@font-face {
+    src: url("font/Vazir.ttf") format("truetype");
+    src: url("font/vazir.woff") format("woff");
+    src: url("font/vazir.eot") format("eot");
+}
+body{
+    direction: rtl;
+    font-family: "vazir",serif;
+    margin: 0;
+    background-color: #dbe6ff;
+}
+input,textarea,button{
+    font-family: 'Vazir', sans-serif;
+}
+.container{
+    width: 1000px;
+    max-width: 100%;
+    text-align: center;
+    margin:auto;
+}
+header{
+    margin-top: -16px;
+    background-image: url("img/slide1.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+nav ul{
+    display: flex;
+    justify-items: center;
+    justify-content:center;
+}
+.container ul li{
+    padding: 5px 15px;
+    list-style-type: none;
+
+}
+.container ul li a{
+    color: #6352ca ;
+    font-size: 20px;
+}
+.navbar{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header-content{
+    color: #dbe6ff;
+    margin-top: 100px;
+}
+.header-content h2{
+    font-size: 40px;
+}
+/*   header   */
+.about{
+    margin: 80px 0;
+}
+.about-title{
+    margin: 90px 0;
+}
+.about-title p{
+    color: #626262;
+}
+.about-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-item{
+    flex:content;
+}
+.about-item img{
+    border-radius: 50%;
+}
+/*   about   */
+.message{
+    height: 300px;
+    background-image: url("img/GPOO0691.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 80px;
+}
+.message-content{
+    color: white;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.message-content h2{
+    margin-top: 110px;
+}
+/*   service   */
+.service{
+    margin: 70px 0;
+}
+.service-item{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    flex: 0 0 calc(25% - 20px);
+}
+.item i{
+    font-size: 50px;
+}
+.item p{
+text-align:justify-all;
+    padding-bottom: 20px;
+}
+.item a{
+    background-color: #6352ca;
+    color: white;
+    padding: 4px 15px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+/*   work   */
+
+.work{
+    width:100%;
+    margin: 100px 0;
+}
+
+.work-content{
+    width: 100%;
+}
+.work-content ul{
+    padding: 0;
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.work-content ul li{
+    position: relative;
+}
+.work-content ul li div{
+    position: absolute;
+    top: 4px;
+    right: 14px;
+    bottom: 15px;
+    left: 14px;
+transition: all .2s ease-in-out;
+}
+.work-content ul li:hover div{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 200%;
+}
+.work-content ul li:hover span{
+    display: block;
+}
+.work-content ul li span{
+    position: absolute;
+    font-size: 35px;
+    top: 30%;
+    right: 43%;
+    display: none;
+    color: white;
+}
+
+/*     tamas   */
+.contact{
+   margin: 40px 0;
+}
+
+.conform input{
+    width: 50%;
+    outline-color: #6352ca;
+    border: 1px solid #6756d9;
+    padding: 15px ;
+    margin: 10px 0;
+    border-radius: 3px;
+
+}
+.conform textarea{
+    width: 53%;
+    height: 100px;
+    border-radius: 3px;
+    resize: none;
+    border: 1px solid #6756d9;
+    outline-color:#6352ca ;
+    margin: 15px 0;
+}
+.conform input[type=submit]{
+    width: 45%;
+    background-color: #6352ca;
+    color: white;
+    font-size: 20px;
+    padding: 7px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.conform input[type=submit]:hover{
+    background-color: #3e3e83;
+}
+/*    footer   */
+.social ul{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 30px 0;
+}
+.social ul li i{
+    font-size:40px ;
+    transition: all .2s linear;
+}
+.social ul li i:hover{
+    color: #000;
+}
+footer{
+    height: 70px;
+    background-color: #0D1927;
+    color: white;
+
+}
+footer div h4{
+    padding-top: 21px;
+    position: relative;
+    animation: fahim 3s infinite alternate;
+}
+
+@keyframes fahim {
+    from{right: -100px;}
+    to{right: 100px;}
+}
